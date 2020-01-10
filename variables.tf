@@ -1,0 +1,16 @@
+variable "zone" {
+  type        = string
+  description = "doamin name"
+}
+
+variable "ttl" {
+  description = "TTL to be used for www record - 1 for automatic"
+  type        = number
+  default     = 1
+}
+
+variable "proxied" {
+  description = "If www record shoud be proxied or not"
+  type        = bool
+  default     = true
+}
