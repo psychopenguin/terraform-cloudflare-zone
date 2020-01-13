@@ -11,6 +11,10 @@ locals {
       "aspmx4.googlemail.com"   = 30
       "aspmx5.googlemail.com"   = 30
     }
+    improvmx = {
+      "mx1.improvmx.com" = 10
+      "mx2.improvmx.com" = 20
+    }
   }
   mx_servers = local.mx_providers[var.mx_provider]
 }
