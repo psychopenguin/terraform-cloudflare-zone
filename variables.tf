@@ -16,13 +16,13 @@ variable "proxied" {
 }
 
 variable "mx_provider" {
-  description = "Name of mail server provider - only Google"
+  description = "Name of mail server provider"
   type        = string
   default     = "none"
 }
 
 variable "custom_mx_servers" {
   description = "List of mailservers for this domain"
-  type        = (map(number))
+  type        = map(number)
   default     = {}
 }
